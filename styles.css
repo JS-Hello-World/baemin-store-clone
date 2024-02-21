@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#header {
+     height: 70px; display: flex; align-items: center; justify-content: center; background-color: #0C0C0C;
+}
+
+#banner {
+    background-color: #0C0C0C; height: 660px; display: flex; align-items: center; justify-content: center; color: white; text-align: center;
+}
+
+.Banner__SubTitle {
+    font: 22px; margin-bottom: 3px;
+}
+
+.Banner__Title {
+    font-size: 40px;
+}
+
+.Banner__AddressInput {
+    width: 400px; height: 56px; font-size: 16px; padding: 18px 46px; box-sizing: border-box; margin-top: 12px; border-radius: 28px; outline: none;
+    transition: .2s transform;
+}
+
+.Banner__AddressInput:focus {
+    transform: scale(1.05);
+}
+
+.Banner__RedirectButton {
+    display: flex; padding: 8px 16px; width: 180px; height: 38px; align-items: center; justify-content: center; border-radius: 9999px; border: 1px solid #fff; color: #fff; text-decoration: none; cursor: pointer; margin: 16px auto 0;
+    transition: .2s all;
+}
+
+.Banner__RedirectButton:hover {
+    background-color: #fff;
+    color: #0C0C0C;
+}
+
+.DownloadLinks {
+    background-color: #2AC1BC; width: 100%; height: 70px; display: flex; align-items: center; justify-content: center;
+}
+
+.DownloadLinks__AppStore {
+    width: 132px; height: 40px; background-color:#F3F5F7; border: 1px solid rgba(0, 0, 0, 0.05); display: flex; align-items: center; justify-content: center; border-radius: 5px; margin-right: 14px; font-weight: bold; cursor: pointer;
+}
+
+.DownloadLinks__GooglePlay{
+    width: 132px; height: 40px; background-color:#F3F5F7; border: 1px solid rgba(0, 0, 0, 0.05); display: flex; align-items: center; justify-content: center; border-radius: 5px; font-weight: bold; cursor: pointer;
+}
+
+.ProductMarquee {
+    width: 100%; height: 360px; background-color: #F3F5F7; display: flex; justify-content: center; padding-top: 56px; box-sizing: border-box; flex-wrap: wrap;
+}
+
+.ProductMarquee__Products {
+    width: 100%; height: 200px; background-image: url(./assets/images/bmmarquee.png); background-size: contain; background-repeat: repeat-x;
+    animation: 15s Flow infinite linear;
+}
+
+@keyframes Flow {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 4609px;
+    }
+}
+
+html body .IntroduceSection {
+
+}
+
+.IntroduceSection {
+    padding: 86px 0;
+}
+.IntroduceSection__Container {
+    width: 100%; max-width: 730px; margin: auto; padding: 0 16px; box-sizing: border-box;
+}
+.IntroduceSection__Row {
+    display: flex; align-items: center; justify-content: space-between; margin-bottom: 96px;
+}
+.IntroduceSection__Row:last-of-type {
+    margin-bottom: 0;
+}
